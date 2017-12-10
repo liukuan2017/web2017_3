@@ -25,7 +25,8 @@ function choose(td){
     }
 
 }
-function calcutor(content){
+function calcutor(content)
+{
     var index = content.lastIndexOf("(");
     if(index > -1)
     {
