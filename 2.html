@@ -2,9 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>表单</title>
+    <style type="text/css">
+        body {
+            font-family: 微软雅黑;
+            font-size: 20px;
+            color: #666666;
+            background-color: #f8f8f8;
+        }
+        fieldset {
+            width: 500px;
+            margin-top: 30px;
+            border: 1px solid #d6d6d6;
+            background-color: #ffffff;
+            line-height: 1.6em;
+            padding: 10px;
+        }
+        input[type="text"],
+        input[type="password"]{
+            width: 300px;
+            border: 1px solid #d6d6d6;
+            padding: 2px;
+            outline: none;
+        }
+        input[type="text"]:focus,
+        input[type="text"]:hover,
+        input[type="password"]:focus,
+        input[type="password"]:hover,
+        {
+            background-color: #d0e2f0;
+            border: 1px solid #999999;
+        }
+        input[type="submit"] {
+            border: 1px solid #006633;
+            background-color:#B4F1F1 ;
+            color: black;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            border: 1px solid #006633;
+            background-color:#33CCCC;
+            color: black;
+            cursor: pointer;
+        }
+        .title {
+            float: left;
+            width: 160px;
+            clear: left;
+        }
+        .submit {
+            width: 520px;
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
+<div align="center">
+    <form action="" method="get">
+    <fieldset>
+        <legend>注册账号</legend>
+        <p>
+            <label class="title" for="name">昵称：</label>
+            <input type="text" name="name" id="name"><br>
+            <label class="title" for="email">密码：</label>
+            <input type="password" name="password" id="password"><br>
+            <label class="title" for="email">确认密码：</label>
+            <input type="password" name="password"><br>
+            <label class="title" for="email">邮箱：</label>
+            <input type="text" name="email" id="email">
+        </p>
+        <span class="title">性别:</span>
+        <label><input type="radio" name="member" value="yes" /> 男</label>
+        <label><input type="radio" name="member" value="no" /> 女</label>
 
+    </fieldset>
+    <div class="submit"><input type="submit" value="注册" /></div>
+</form>
+</div>
 </body>
 </html>
